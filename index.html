@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Welcome Page -->
+        <div id="welcome-page" class="page">
+            <h1>Welcome to the Quiz!</h1>
+            <p>Please enter your name to begin:</p>
+            <input type="text" id="user-name" placeholder="Your Name">
+            <button onclick="startQuiz()">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz-page" class="page" style="display: none;">
+            <h2>Question <span id="question-number">1</span>/10</h2>
+            <p id="question-text"></p>
+            <div id="options"></div>
+            <button onclick="nextQuestion()" id="next-btn" disabled>Next</button>
+        </div>
+
+        <!-- Result Page -->
+        <div id="result-page" class="page" style="display: none;">
+            <h2>Quiz Results</h2>
+            <p>Score: <span id="result-score"></span></p>
+            <p id="result-comment"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
