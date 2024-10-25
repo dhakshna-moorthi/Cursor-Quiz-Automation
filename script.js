@@ -115,7 +115,7 @@ function showResults() {
     } else if (score <= 9) {
         comment = "Great job " + userName + "! You have a good grasp of general knowledge.";
     } else {
-        comment = "Perfect score" + userName + "! You're a general knowledge expert!";
+        comment = "Perfect score " + userName + "! You're a general knowledge expert!";
     }
     document.getElementById('result-comment').textContent = comment;
 }
